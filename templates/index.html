@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short URL</title>
+    <link href="{{ url_for('static', filename='application.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="grid">
+        <div class="centered grid__col--8 panel--padded--centered">
+            <h1 class="headline-primary--grouped">ShortURL</h1>
+        </div>
+        <div class="centered grid__col--4 ">
+            <form method="POST">
+                <label class="form__label" for="newUrl">URL:</label> 
+                <input class="form__input" type="text" id="url" name="newUrl" placeholder="URL" autocomplete="off">
+                <input class="form__btn" type="submit" value="Shorten!">
+              </form>
+        </div>
+    </div>
+</body>
+</html>
